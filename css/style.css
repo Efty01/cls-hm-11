@@ -1,0 +1,166 @@
+/* default css starts */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --main-color: #0f2f44;
+  --seocdary-color: #ffc712;
+  --primary-font: 'Ubuntu', sans-serif;
+  --secondary-font: 'Open Sans', sans-serif;
+  --last-font: 'Abril Fatface', cursive; 
+}
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-item{
+  align-items: center;
+}
+/* default css ends */
+
+/* presets strats */
+
+/* header */
+.header .sub-header * {
+  font-family: var(--primary-font);
+  font-weight: 300;
+  color: var(--main-color);
+  font-size: 50px;
+}
+
+.header .main-header * {
+  font-family: var(--last-font);
+  font-size: 80px;
+  color: var(--main-color);
+  line-height: 60px;
+}
+
+/* para */
+.para-small *{
+  font-size: 14px;
+  font-family: var(--secondary-font);
+  color: var(--main-color);
+  line-height: 21px;
+  text-align: justify;
+}
+
+/* button */
+.btn *{
+  border-style: none ;
+  display: inline-block;
+  padding: 8px 10px;
+  font-family: var(--primary-font);
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/* presets ends */
+
+/* header starts */
+header{
+  background-color: var(--main-color);
+  padding: 18px 0;
+}
+
+header p{
+color: white;
+font-family: var(--primary-font);
+}
+
+header .wlcm,
+header .time{
+  width: 50%;
+}
+
+header .time{
+  text-align: right;
+}
+/* header ends */
+
+/* nav starts */
+nav .logo{
+  width: 40%;
+}
+
+nav .menu{
+  width: 60%;
+}
+
+nav .menu {
+  text-align: right;
+}
+
+nav .menu ul li{
+  display: inline-block;
+  position: relative;
+}
+
+nav .menu ul li a{
+  padding: 42px 10px;
+  display: block;
+  transition: 0.3s;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+nav .menu ul li:hover > a{
+  color: var(--seocdary-color);
+  background-color: #fff9e6;
+}
+
+nav .menu ul li ul{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -20px;
+  transition: 0.3s;
+}
+
+nav .menu ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+
+nav .menu ul li ul li{
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+}
+
+nav .menu ul li ul li a {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+nav .menu ul li a span{
+  display: inline-block;
+  transition: 0.5s;
+}
+nav .menu ul li:hover a span{
+  transform: rotateX(180deg);
+}
+/* nav ends */
